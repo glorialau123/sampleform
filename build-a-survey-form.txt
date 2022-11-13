@@ -1,0 +1,146 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Mystery Shopper Registration</title>
+</head>
+
+<body>
+  <h1 id="title">Mystery Shopper Registration</h1>
+  <!--make class for title font and description appearance-->
+  <p id="description" class="description"><i>Register to be a mystery shopper</i></p>
+  <form id="survey-form">
+<!--make class for label titles and separate spaces-->
+
+<div class="form-group">  
+  <label for="name" id="name-label">Name: 
+  <input id="name" type="text" placeholder="John Smith" required/></label>
+</div>
+
+<div class="form-group">
+  <label for="email" id="email-label">Email: 
+  <input id="email" type="email" required placeholder="johnsmith@gmail.com" /></label>
+</div>
+
+<div class="form-group">
+  <label for="number" id="number-label">Years of shopping experience: 
+  <input id="number" type="number" min="0" max="120" placeholder="5" /></label>
+</div>
+
+<div class="form-group">
+  <label for="dropdown">Where do you prefer to shop at?
+  <select id="dropdown">
+  <option value="">Choose one</option>
+  <option value="1">Safeway</option>
+  <option value="2">Save On Foods</option>
+  <option value="3">Buy Low Foods</option>
+  <option value="4">T and T Supermarket</option>
+</select>
+</label>
+</div>
+
+<div class="form-group">
+  <p>Do you have a car?</p>
+  <label class="options"><input type="radio" name="car" class="inline" value="yes">Yes, I have a car</label>
+  <label class="options"><input type="radio" name="car" class="inline" value="no">No, I do not have a car</label>
+</div>
+
+<div class="form-group">
+  <p>Indicate your preferred shopping time</p>
+  <label class="options"><input type="checkbox" value="morning" class="inline"> Morning</label>
+  <label class="options"><input type="checkbox" value="afternoon" class="inline"> Afternoon</label>
+  <label class="options"><input type="checkbox" value="evening" class="inline"> Evening</label>
+</div>
+
+<div class="form-group">
+  <label for="additional">Is there anything else you want us to know? 
+  <textarea id="additional" placeholder="I want to be a mystery shopper because..." rows="4" cols="30"></textarea> 
+  </label>
+</div>
+
+<input type="submit" id="submit" />
+
+  
+  </form>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #FFA07A;
+  color: #000000;
+  font-family: Tahoma;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em 0.25em 0.25em;
+  font-family: Garamond, Verdana;
+}
+
+.description {
+  text-align: center;
+  color: #CB4335;
+  font-family: Verdana;
+  margin: 1em auto;
+}
+
+form {
+  width: 80vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2em 5em;
+  background-color: #F8C471;
+}
+
+.form-group {
+  margin: 0 auto 1rem auto;
+  padding-bottom: 0.25em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 0.25rem 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input[type="submit"]{
+  display: block;
+  width: 40%;
+  min-width: 200px;
+  margin: 1em auto;
+
+}
+
+.options {
+  color: #566573;
+}
+
+** end of undefined **
+
